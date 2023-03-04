@@ -1,0 +1,86 @@
+#input1{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: purple;
+    border-width: 2px;
+    
+}
+
+#input2{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: purple;
+    border-width: 2px;
+    
+}
+#input3{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: purple;
+    border-width: 2px;
+    
+}
+
+.div{
+    margin-top: 30px;
+    /* border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-width: 20%;
+    border-left: auto;
+    border-right: auto; */
+    
+}
+
+#label1{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+
+#label2{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+
+#label3{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+
+#text1{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+#text2{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+#text3{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: italic;
+    
+}
+
+#button_submit{
+    margin-top: 20px;
+}

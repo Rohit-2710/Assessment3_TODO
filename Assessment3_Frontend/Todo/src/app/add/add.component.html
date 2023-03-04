@@ -1,0 +1,25 @@
+<div *ngIf="!submitted" style="text-align: center;">
+    <form>
+        <div class="div">
+            <label for="Todo" class="form-label" id="label1">Todo Title</label>
+            <input type="text" class="form-control" id="input1" required [(ngModel)]="todo.todo" placeholder="Enter Todo" name="todo">
+            <div  class="form-text" id="text1">Please enter your todo</div>
+        </div>
+        <div class="div">
+            <label for="Due" class="form-label" id="label2">Due Date</label>
+            <input type="text" class="form-control" id="input2" required [(ngModel)]="todo.due" placeholder="Enter due date" name="due">
+            <div  class="form-text" id="text2">Please enter the due for the Todo in <b>YYYY-MM-DD</b> format only</div>
+        </div>
+        <div class="div">
+            <label for="Status" class="form-label" id="label3">Todo Status</label>
+            <input type="text" class="form-control" id="input3" required [(ngModel)]="todo.status" placeholder="Enter Todo status" name="status">
+            <div  class="form-text" id="text3">Please enter the Todo status only as <b>DONE</b>, <b>PENDING</b> or <b>FAILED</b></div>
+        </div>
+        <button class="btn btn-primary" (click)="add()" id="button_submit">Submit</button>
+    </form>
+</div>
+<div *ngIf="submitted" style="text-align: center;">
+    <h2>Todo Added</h2>
+    <button class="btn btn-primary" (click)="newTodo()" id="button_submit">New Todo</button>
+
+</div>

@@ -1,0 +1,78 @@
+<div class="top-div">
+    
+    
+            <div style="text-align: center;">
+                <label class="label">Todo Failed</label>
+            </div>
+            <table class="table table-dark table-hover">                
+                <table class="table" style="background-color: lightcoral; margin-bottom: 0px;">
+                    <thead>
+                      <tr>
+                        
+                        <th scope="col">Task</th>
+                        <th scope="col">Due</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                            <tr *ngFor="let todo of todos" >
+                                <td *ngIf="todo.status==='FAILED'">{{todo.todo}}</td>
+                                <td *ngIf="todo.status==='FAILED'">{{todo.due|slice:0:10}}</td>
+                                <td *ngIf="todo.status==='FAILED'"><button class="btn btn-danger" (click)="deleteTodo(todo._id)">Delete</button></td>
+                              </tr>
+                        
+                     
+                    </tbody>
+                  </table>
+              </table>
+              <div style="text-align: center;">
+                <label class="label">Todo Pending</label>
+              </div>
+              <table class="table table-dark table-hover">                
+                <table class="table" style="background-color: lightgoldenrodyellow; margin-bottom: 0px;">
+                    <thead>
+                      <tr>
+                        
+                        <th scope="col">Task</th>
+                        <th scope="col">Due</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                            <tr *ngFor="let todo of todos" >
+                                <td *ngIf="todo.status==='PENDING'">{{todo.todo}}</td>
+                                <td *ngIf="todo.status==='PENDING'">{{todo.due|slice:0:10}}</td>
+                                <td *ngIf="todo.status==='PENDING'"><button class="btn btn-danger" (click)="deleteTodo(todo._id)">Delete</button></td>
+                              </tr>
+                        
+                     
+                    </tbody>
+                  </table>
+                </table>
+                <div style="text-align: center;">
+                    <label class="label">Todo Done</label>
+                  </div>
+                  <table class="table table-dark table-hover">                
+                    <table class="table" style="background-color: lightgreen; margin-bottom: 0px;">
+                        <thead>
+                          <tr>
+                            
+                            <th scope="col">Task</th>
+                            <th scope="col">Due</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let todo of todos" >
+                                    <td *ngIf="todo.status==='DONE'">{{todo.todo}}</td>
+                                    <td *ngIf="todo.status==='DONE'">{{todo.due|slice:0:10}}</td>
+                                    <td *ngIf="todo.status==='DONE'"><button class="btn btn-danger"(click)="deleteTodo(todo._id)">Delete</button></td>
+                                  </tr>
+                            
+                         
+                        </tbody>
+                      </table>
+                    </table>
+           
+        </div>
+    

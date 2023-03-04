@@ -1,0 +1,22 @@
+.top-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: #343a40;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
