@@ -61,3 +61,6 @@ exports.deleteTodo = (req, res) => {
       });
     });
 };
+exports.search = (req, res) => {
+  Todo.findById(req.params.id);
+};

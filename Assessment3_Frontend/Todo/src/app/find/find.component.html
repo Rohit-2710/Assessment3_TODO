@@ -1,0 +1,6 @@
+<div style="text-align: center;">
+    <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption">
+        <option *ngFor=" let todo of todos" value="{{todo._id}}">{{todo.todo}}</option>
+    </select><br>
+    <button style="margin-top: 10px;"class="btn btn-primary" >Search</button>
+</div>
